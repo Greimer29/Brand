@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+/*Zona de variables*/
+
+:root {
+    --green-color: #7ACC20;
+    --white-color: white;
+    --black-color: #313337;
+    /*tipografía*/
+    --normal: 14px;
+    /*espaciado*/
+    --space: 10px;
+    /*shadow*/
+    --box: 1px 1px 3px #dbdbdb;
+    /*aling-text*/
+    --center: center;
+}
+
+
+/*Zona de variables*/
+
+
+/*elementos no selectores*/
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: aqua; */
+}
+
+nav {
+    display: flex;
+    background-color: green;
+    padding: var(--space);
+    justify-content: space-between;
+    align-items: var(--center);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    padding-left: 20px;
+    list-style: none;
+}
+
+nav li a {
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: var(--white-color);
+}
+
+p,
+label {
+    font-size: var(--normal);
+}
+
+
+/*---- venta ----*/
+
+.modulo_pago {
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+
+.img_modulo_pago {
+    max-width: 150px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.data {
+    margin-top: var(--space);
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.modulo_pago .main_button {
+    margin-top: var(--space);
+}
+
+
+/*---- Main section ---- */
+
+.main_section {
+    padding: 18%;
+    padding-top: 10%;
+    text-align: var(--center);
+}
+
+.products {
+    background-image: url("../img/curve.png");
+    height: 20%;
+    background-size: cover;
+    background-position: center top;
+    padding: 10%;
+    display: flex;
+}
+
+.product {
+    padding: 15px;
+    margin-top: -260px;
+}
+
+.product .content {
+    background-color: var(--white-color);
+    padding: 10%;
+    box-shadow: var(--box);
+}
+
+.img_content {
+    text-align: var(--center);
+}
+
+.main_button {
+    background-color: var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: 20px;
+    color: var(--white-color);
+    border: 0;
+    border-radius: 2px;
+    outline: none;
+}
+
+.main_button:hover {
+    background-color: #5e9e22;
+    cursor: pointer;
+}
+
+
+/* utility section */
+
+.utilityes {
+    display: flex;
+    text-align: var(--center);
+    padding: 5%;
+    margin-top: 115px;
+}
+
+.img_utility img {
+    border-radius: 50%;
+}
+
+.utilityes .utility .content_utility p {
+    padding-left: 53px;
+    padding-right: 53px;
+}
+
+
+/*acomodando las dimensiones de una imagen en particular*/
+
+#njd {
+    height: 177px;
+    width: 220px;
+}
+
+
+/*acomodando las dimensiones de una imagen en particular*/
+
+
+/*Mentions area*/
+
+.mentions .mentions_header {
+    padding-top: 104px;
+    text-align: var(--center);
+}
+
+.mentions_cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mention {
+    background-color: var(--white-color);
+    box-shadow: 0 3px 6px #00000029;
+    padding: var(--space);
+    border-radius: 2px;
+}
+
+.mention_content {
+    max-width: 220px;
+}
+
+.mention .mention_content .img_mention {
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+}
+
+#angie {
+    background-image: url("../img/angie.jpg");
+}
+
+#stewart {
+    background-image: url("../img/stewart.jpg");
+}
+
+#leo {
+    background-image: url("../img/leo.jpg");
+}
+
+#pepe {
+    background-image: url("../img/pepe.jpg");
+}
+
+#mona {
+    background-image: url("../img/mona.jpg");
+}
+
+
+/* footer section */
+
+.footer {
+    background-color: rgb(32, 32, 32);
+    margin-top: 55px;
+    padding: 25px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.contactanos a {
+    color: var(--green-color);
+}
